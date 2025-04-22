@@ -1,3 +1,2 @@
 # first-one
-My first project! Hello world!
-
+My first project!
