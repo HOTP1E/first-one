@@ -1,20 +1,17 @@
-package ru.crew.management.model;
+package ru.crew.management.dto;
 
-import jakarta.persistence.*;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import lombok.ToString;
+import ru.crew.management.model.AirplaneFamily;
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity
-@Table(name = "airplanes")
-public class Airplane {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+@ToString
+public class AirplaneDTO {
 
     @Enumerated(EnumType.STRING)
     private AirplaneFamily family;
@@ -26,5 +23,4 @@ public class Airplane {
     private int crewAmount;
 
     private Long crewMember;
-
 }

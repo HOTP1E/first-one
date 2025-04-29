@@ -24,5 +24,5 @@ public class Crew {
     private Position position;
 
     @Enumerated(EnumType.STRING)
-    private TypeRating typeRating;
+    private AirplaneFamily typeRating;
 }

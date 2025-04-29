@@ -5,5 +5,5 @@ create table airplanes
     type        varchar,
     year        int,
     seats       int,
-    СrewAmount  int
+    CrewAmount  int
 )
