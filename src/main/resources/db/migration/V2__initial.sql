@@ -1,11 +1,9 @@
 create table airplanes
 (
-
     id          bigserial primary key ,
     family      varchar,
     type        varchar,
     year        int,
     seats       int,
-    crewAmount  int
-
+    СrewAmount  int
 )
