@@ -9,20 +9,22 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "crews")
-public class Crew {
+@Table(name = "airplanes")
+public class Airplane {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String firstName;
-
-    private String lastName;
-
     @Enumerated(EnumType.STRING)
-    private Position position;
+    private AirplaneFamily family;
 
-    @Enumerated(EnumType.STRING)
-    private AirplaneFamily typeRating;
+    private int year;
+
+    private int seats;
+
+    private int crewAmount;
+
+    private Long crewMember;
+
 }
